@@ -1,4 +1,4 @@
-# 🧬 Cellular Automaton Kernel - Advanced Biological Evolution Simulator
+#  Cellular Automaton Kernel - Advanced Biological Evolution Simulator
 
 A bare-metal kernel implementing a realistic evolutionary cellular automaton with advanced biological mechanisms including predation, epidemics, environmental cycles, and adaptive mutations.
 
