@@ -17,29 +17,29 @@
 #define BONUS_CLUSTERING 6   // Probability bonus for clustering (%)
 
 // Biological evolution parameters
-#define AGE_MAXIMUM 1200             // Maximum cell age (longer for survival)
-#define FERTILITE_DEBUT 5            // Minimum age for reproduction (earlier)
+#define AGE_MAXIMUM 100             // Maximum cell age (longer for survival)
+#define FERTILITE_DEBUT 12            // Minimum age for reproduction (earlier)
 #define FERTILITE_OPTIMALE 30        // Age of maximum fertility
-#define FERTILITE_DECLIN 150         // Age when decline begins (later)
+#define FERTILITE_DECLIN 70         // Age when decline begins (later)
 #define FACTEUR_HEREDITE 5           // % of parental age inheritance (reduced for dynamism)
 #define TAUX_MUTATION 8              // % chance of mutation (increased for diversity)
 #define VARIATION_MUTATION 15        // Maximum amplitude of age mutations
-#define INSTABILITE_GENERATION 1     // Very gentle instability (0.01% per generation)  
+#define INSTABILITE_GENERATION 0.1     // Very gentle instability (0.01% per generation)  
 #define SEUIL_INSTABILITE_AGE 500    // Age when instability begins (very old cells)
 #define SEUIL_DENSITE_FATALE 999     // Local density causing forced mortality (disabled)
 #define CHANCE_MORT_DENSITE 0        // % chance of death in high density (disabled)
-#define ACCELERATION_VIEILLISSEMENT 200 // Age when aging accelerates (increased)
-#define FACTEUR_ACCELERATION 2       // Aging multiplier (reduced)
+#define ACCELERATION_VIEILLISSEMENT 20 // Age when aging accelerates (increased)
+#define FACTEUR_ACCELERATION 1       // Aging multiplier (reduced)
 #define CONSOMMATION_NUTRIMENTS 1    // Nutrients consumed per cell/cycle (reduced)
-#define REGENERATION_NUTRIMENTS 3    // Nutrients regenerated per cycle (balanced)
+#define REGENERATION_NUTRIMENTS 15    // Nutrients regenerated per cycle (balanced)
 #define NUTRIMENTS_INITIAUX 100      // Starting nutrients per cell (increased for survival)
 
 // Race and movement parameters
 #define FORCE_POLARISATION_INITIALE 128  // Default polarization strength
-#define HERITAGE_RACE_PROBABILITE 70     // % chance of inheriting parental race
-#define MIXITE_GENETIQUE_CHANCE 20       // % chance of creating hybrid race
-#define RYTHME_MOUVEMENT_RAPIDE 50       // Cycles between movements for fast races (reduced)
-#define RYTHME_MOUVEMENT_LENT 100        // Cycles between movements for slow races (reduced)
+#define HERITAGE_RACE_PROBABILITE 40     // % chance of inheriting parental race
+#define MIXITE_GENETIQUE_CHANCE 100       // % chance of creating hybrid race
+#define RYTHME_MOUVEMENT_RAPIDE 1      // Cycles between movements for fast races (reduced)
+#define RYTHME_MOUVEMENT_LENT 10        // Cycles between movements for slow races (reduced)
 
 /**
  * Advanced Biological Evolution Parameters - Realistic Ecosystem Simulation
@@ -48,33 +48,33 @@
 #define FITNESS_AMPLITUDE 50             ///< Amplitude of evolutionary fitness variations
 #define CYCLES_ENVIRONNEMENTAUX 150     ///< Environmental cycle period (generations)  
 #define PREDATION_CYCLE 80               ///< Predation pressure cycle (generations)
-#define EPIDEMIC_CYCLE 120               ///< Disease outbreak cycle (generations)
+#define EPIDEMIC_CYCLE 500               ///< Disease outbreak cycle (generations)
 #define FOOD_SCARCITY_CYCLE 90           ///< Food scarcity cycle (generations)
 
 // Evolutionary pressure parameters
 #define BASE_MUTATION_RATE 3             ///< Base mutation rate (%)
 #define STRESS_MUTATION_MULTIPLIER 4     ///< Mutation rate multiplier under stress
 #define PREDATION_PRESSURE 15            ///< Predation mortality rate (%)
-#define EPIDEMIC_MORTALITY 20            ///< Epidemic mortality rate (%)
-#define RESISTANCE_EVOLUTION_RATE 12     ///< Rate of resistance trait evolution
+#define EPIDEMIC_MORTALITY 10            ///< Epidemic mortality rate (%)
+#define RESISTANCE_EVOLUTION_RATE 40     ///< Rate of resistance trait evolution
 
 // Migration and movement parameters  
 #define MIGRATION_PRESSURE_THRESHOLD 6   ///< Density threshold triggering migration
-#define FORCED_MIGRATION_RATE 25         ///< Probability of forced migration (%)
+#define FORCED_MIGRATION_RATE 50         ///< Probability of forced migration (%)
 #define TERRITORIAL_COMPETITION 8        ///< Competition intensity for territory
 #define DISPERSAL_ADVANTAGE 15           ///< Fitness advantage for dispersal behavior
 
 // Biological parameters 
-#define SEUIL_COMPETITION 5          // Number of neighbors creating resource competition  
+#define SEUIL_COMPETITION 15          // Number of neighbors creating resource competition  
 #define STRESS_COMPETITION 2         // Slight health reduction in competition
 #define FACTEUR_VIEILLISSEMENT 1     // Natural health loss with age
 #define CYCLES_SAISONS 10           // Slow environmental changes (seasons)
 
 // Simulation parameters
-#define VITESSE_SIMULATION 500000000  // Delay between generations (higher = slower)
+#define VITESSE_SIMULATION 100000000  // Delay between generations (higher = slower)
 
 // Cellular automaton rules (easy to change)
-#define REGLES_AUTOMATE "B3/S20"  // HighLife with replicators (prevents stagnation)
+#define REGLES_AUTOMATE "B36/S23"  // HighLife with replicators (prevents stagnation)
 // Other examples:
 // #define REGLES_AUTOMATE "B36/S23"    // HighLife (adds replicators)
 // #define REGLES_AUTOMATE "B2/S23"     // Seeds (very chaotic)
