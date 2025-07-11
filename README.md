@@ -2,6 +2,12 @@
 
 A bare-metal kernel implementing a realistic evolutionary cellular automaton with advanced biological mechanisms including predation, epidemics, environmental cycles, and adaptive mutations.
 
+
+## Disclaimer
+
+I haven't found any optmal parameters for the simulation yet, it's mostly a big playground with a rather advanced realism.
+
+
 ##  Quick Start
 
 ### Compilation
