@@ -2,10 +2,10 @@
 
 A bare-metal kernel implementing a realistic evolutionary cellular automaton with advanced biological mechanisms including predation, epidemics, environmental cycles, and adaptive mutations.
 
-
+<center>
 <img width="496" height="496" alt="image" src="https://github.com/user-attachments/assets/a69a5264-9642-46c6-9e05-9da24d17bc7a" />
 
-
+</center>
 
 ## Disclaimer
 
